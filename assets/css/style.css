@@ -7,8 +7,8 @@ body {
 	font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";	font-size: 16px;
 	line-height: 1.5;
 	color: #333;
-	background-color: #ffffff;
-
+	background: rgb(217,35,112);
+	background: linear-gradient(0deg, rgba(217,35,112,1) 0%, rgba(60,56,140,1) 59%, rgba(18,30,53,1) 100%);
 }
 header {
 	display: inline;
@@ -23,11 +23,30 @@ aside {
 	border-radius: 10px;
 	padding: 20px;
 	width: 30%;
+	background-color: #192841;
+	background-image: url("../images/aside.png");
+	border: 2px solid #000000;
+	max-height: 1090px;
+}
+aside2 {
+	margin-top: 30px;
+	float : right;
+	border-radius: 10px;
+	padding: 10px;
+	width: 30%;
 	flex-direction: column;
 	background-color: #192841;
 	background-image: url("../images/aside.png");
 	border: 2px solid #000000;
 }
+/* button panitia center*/
+.btn {
+	/* make it center */
+	margin: 0 auto;
+	/* make it block */
+	display: block;
+}
+
 .agora {
 	padding: 10px;
 	background-color: #192841;
@@ -36,6 +55,10 @@ aside {
 	text-transform: capitalize;
 	background-image: url("../images/header.png");
 }
+.pan-text {
+	align-items: center;
+	text-align: center;
+}
 .beranda {
 	text-align: center;
 	color: #000000;
@@ -43,13 +66,26 @@ aside {
 	margin-bottom: 20px;
 }
 .tema {
+	margin-top: -10px;
 	margin-bottom: 10px;
+	box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.8);
+	border: 1px solid #000000;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #fff;
+	background-image: url("../images/default.png");
 }
 .sambutan {
 	overflow: auto;
 	text-align: justify;
 	overflow-y: hidden;
 	margin-bottom: 20px;
+	box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.8);
+	border: 1px solid #000000;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #fff;
+	background-image: url("../images/default.png");
 }
 .pic-quotes {
 	padding: 5px;
@@ -70,12 +106,14 @@ aside {
 	color: #333;
 	text-align: center;
 	font-size: 20px;
-	background-color: #fff;
 }
 .cd-times {
 	box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.8);
 	border: 1px solid #000000;
 	border-radius: 10px;
+	background-image: url("../images/cd.png");
+	background-size: cover;
+	background-color: #fff;
 }
 .countdown {
 	display: flex;
@@ -172,11 +210,22 @@ main {
 .doc-column {
 	display: flex;
 	flex-direction: column;
+	box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.8);
+	border: 1px solid #000000;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 20px;
+	background-image: url(../images/default.png);
+	
+	background-color: #fff;
+	
 }
 .doc-row {
 	display: flex;
 	flex-direction: row;
 	flex-grow: 1;
+	justify-content: space-between;
+	margin-bottom: 10px;
 }
 .doc {
 	padding: 10px 10px 4px 0px;
@@ -184,35 +233,44 @@ main {
 	flex-basis: 33%;
 	border-radius: 10%;
 }
-
-.foto-profil {
-	width: 100px;
-	border-radius: 50%;
-	padding: 5px;
-	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgb(255, 15, 15) 50%, rgb(255, 230, 0) 100%);
-	border: 5px solid #192841;
+.messages {
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	/* make it fit to aside */
 }
-.foto-profil:hover {
-	transition: all ease-in-out 0.2s;
-	border: 5px solid #ffffff;
+.text-container {
+	margin-left: 10px;
+	padding: 10px;
+}
+.text-container .italic {
+	font-style: italic;
+	/* fit the content */
+}
+.msg-container {
+	margin-top: 10px;
+	border-radius: 10px;
+	font-size: smaller;
+	box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.8);
+	border: 1px solid #000000;
+	background-color: #ffffff;
+	color: #000000;
+	margin-bottom: 10px;
+	text-align: justify;
 }
 .foto-panitia {
 	width: 90px;
 	border-radius: 50%;
 	padding: 5px;
 	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgb(255, 15, 15) 50%, rgb(255, 230, 0) 100%);
-	border: 5px solid #192841;
+	margin: 5px;
 }
 .foto-panitia:hover {
-	transition: all ease-in-out 0.2s;
-	border: 5px solid #ffffff;
+	/* transition delay */
+	border-radius: 20%;
+	background: linear-gradient(90deg, rgb(255, 230, 0) 0%, rgb(255, 15, 15) 50%, rgb(131,58,180,1) 100%);
 }
-.profil-pribadi {
-	color: #ffffff;
-	padding: 10px;
-	line-height: 50px;
-	text-align: center;
-}
+
 .profil-panitia{
 	color: #ffffff;
 	padding: 10px;
@@ -227,6 +285,14 @@ main {
 	align-items: center;
 	text-align: center;
 }
+.kdp {
+	padding: 10px;
+	box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.8);
+	border: 1px solid #000000;
+	border-radius: 10px;
+	background-color: #ffffff;
+	background-image: url(../images/default.png);
+}
 .form-group {
 	padding: 10px;
 	margin-bottom: 10px;
@@ -234,6 +300,9 @@ main {
 	background-color: #192841;
 	color: #ffffff;
 	text-align: left;
+	box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.8);
+	border: 1px solid #000000;
+	border-radius: 10px;
 	background-image: url(../images/box.png);
 }
 .form-group label {
@@ -241,6 +310,7 @@ main {
 	display: block;
 }
 .form-group input, .form-group textarea {
+	font-family: sans-serif;
 	padding: 10px;
 	border: none;
 	border-radius: 10px;
@@ -262,36 +332,46 @@ button:hover {
 footer {
 	padding: 20px;
 	color: white;
-	background-color: #192841;
 	text-align: center;
 	font-weight: bold;
-	background-image: url(../images/footer.png);
+	background: rgb(217,35,112);
+	background: linear-gradient(180deg, rgba(217,35,112,1) 0%, rgba(60,56,140,1) 59%, rgba(18,30,53,1) 100%);
+}
+
+@media screen and (max-width: 1180px) {
+	.doc-column {
+		width: 100%;
+	}
+	.doc {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.profil-panitia {
+		display: inline;
+	}
+	.foto-panitia {
+		width: 100px;
+	}
+	.form-group {
+		width: 100%;
+	}
+	.form-group input, .form-group textarea {
+		width: 70%;
+	}
+}
+@media screen and (max-width: 1100px) {
+	aside, aside2 {
+		width: 100%;
+		height: 100%;
+	}
+	#container {
+		width: 100%;
+		height: auto;
+	}
 }
 @media screen and (max-width: 1000px) {
-	h1 {
-		font-size: 20px;
-	}
-	nav li{
-		margin: 5px;
-	}
-	nav li a {
-		color: #ffffff;
-		text-decoration: none;
-		font-size: 10px;
-		margin-left: 10px;
-	}
-	.daftar:hover {
-		background-color: rgb(182, 7, 42);
-		color: #ffffff;
-		text-decoration: none;
-		font-size: 10px;
-		margin-left: 10px;
-	}
-	#container,
-	aside {
-	  width: 100%;
-	  padding: 10px;
-	}
 	.doc-row {
 		flex-direction: column;
 	}
@@ -304,14 +384,75 @@ footer {
 		font-size: 15px;
 	}
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 920px) {
+	h1 {
+		font-size: 20px;
+	}
+	nav li {
+		margin: 5px;
+		font-size: 10px;
+	}
+	nav li a{
+		font-size: 10px;
+		margin : -10px;
+	}
+	.daftar {
+		text-decoration: none;
+		font-size: 10px;
+		margin-left: 10px;
+	}
+	.daftar:hover {
+		text-decoration: none;
+		font-size: 10px;
+		margin-left: 10px;
+	}
+	.cd-times {
+		padding: 5px;
+	}
+	.countdown {
+		padding: 5px;
+	}
+	.count {
+		margin: 5px;
+		font-size: 10px;
+	}
+	.foto-panitia {
+		width: 70px;
+	}
+	.form-group textarea, input, label {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 900px) {
+	.profil-panitia-flex {
+		margin: 20px;
+	}
+}
+@media screen and (max-width: 740px) {
 	nav li a{
 		margin : -10px;
-		font-size: 13px;
+		font-size: 10px;
 	}
 	.count {
 		font-size: 10px;
 		margin: 10px;
+	}
+	.foto-panitia {
+		width: 70px;
+	}
+}
+@media screen and (max-width: 660px) {
+	aside {
+		max-height: 1200px;
+	}
+	.cd-times {
+		background-size: auto;
+	}
+}
+@media screen and (max-width: 380px) {
+	nav li a{
+		margin : -10px;
+		font-size: 12px;
 	}
 }
 @media screen and (max-width: 280px) {
@@ -328,9 +469,6 @@ footer {
 	.count {
 		margin: 5px;
 		font-size: 8px;
-	}
-	.foto-profil {
-		width: 80px;
 	}
 	.foto-panitia {
 		width: 80px;
