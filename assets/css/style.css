@@ -266,11 +266,11 @@ main {
 	margin: 5px;
 }
 .foto-panitia:hover {
-	/* transition delay */
-	border-radius: 20%;
-	background: linear-gradient(90deg, rgb(255, 230, 0) 0%, rgb(255, 15, 15) 50%, rgb(131,58,180,1) 100%);
+	background: linear-gradient(120deg, rgba(131,58,180,1) 0%, rgb(255, 15, 15) 50%, rgb(255, 230, 0) 100%);
 }
-
+.foto-panitia:active {
+	background: #fff
+}
 .profil-panitia{
 	color: #ffffff;
 	padding: 10px;
