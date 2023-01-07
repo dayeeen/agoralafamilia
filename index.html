@@ -20,7 +20,7 @@
 			<ul>
 				<li><a href="#beranda">Beranda</a></li>
 				<li><a href="#dokumentasi">Dokumentasi</a></li>
-				<li><a href="#kdp">Kesan dan Pesan</a></li>
+				<li><a href="#kdp">Kesan & Pesan</a></li>
 				<li><a href="http://bit.ly/PendaftaranReuniNedupa" target="_blank" class="daftar">Daftar</a></li>
 			</ul>
 		</nav>
@@ -81,15 +81,18 @@
 				<div class="doc-column">
 					<h2>Dokumentasi</h2>
 					<div class="doc-row">
-						<img class="doc" src="assets/images/doc/1.JPG" alt="">
-						<img class="doc" src="assets/images/doc/2.JPG" alt="">
-						<img class="doc" src="assets/images/doc/3.JPG" alt="">
+						<img class="doc" src="assets/images/doc/1.jpg" alt="">
+						<img class="doc" src="assets/images/doc/2.jpg" alt="">
+						<img class="doc" src="assets/images/doc/3.jpg" alt="">
 					</div>
 					<div class="doc-row">
-						<img class="doc" src="assets/images/doc/4.JPG" alt="">
-						<img class="doc" src="assets/images/doc/6.JPG" alt="">
-						<img class="doc" src="assets/images/doc/5.JPG" alt="">
+						<img class="doc" src="assets/images/doc/4.jpg" alt="">
+						<img class="doc" src="assets/images/doc/6.jpg" alt="">
+						<img class="doc" src="assets/images/doc/5.jpg" alt="">
 					</div>
+					<a href="https://drive.google.com/drive/u/1/folders/1WHcqizQ_UmBiXoH1SU_qv2Ml5pJ0kgH5" target="_blank">
+						<button class="btn" >Lihat selengkapnya disini</button>
+					</a>
 				</div>
 			</article>
 			<article class="kdp" id="kdp">
@@ -97,45 +100,53 @@
 				<form action="" method="post">
 					<div class="form-group">
 						<label for="nama">Nama</label>
-						<input type="text" name="nama" id="nama" placeholder="Nama">
+						<input type="text" name="nama" id="nama" placeholder="Nama" maxlength="25">
 					</div>
 					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" placeholder="Email">
+						<label for="angkatan">Angkatan</label>
+						<input type="text" name="angkatan" id="angkatan" placeholder="Angkatan" maxlength="4">
 					</div>
 					<div class="form-group">
 						<label for="pesan">Pesan</label>
-						<textarea name="pesan" id="pesan" cols="30" rows="10" placeholder="Pesan"></textarea>
+						<textarea name="pesan" id="pesan" cols="30" rows="10" placeholder="Pesan" maxlength="170"></textarea>
 					</div>
-					<button type="submit" name="submit">Kirim</button>
-
+					<button type="submit" name="submit" id="submit">Kirim</button>
 				</form>
 			</article>
 		</div>
 		<aside>
-			<section class="profil-pribadi">
-				<h2>Profil Pribadi</h2>
-				<a href="https://dayeeen.my.id/" target="_blank"><img class="foto-profil" src="assets/images/panitia/dayen.jpg" alt="dayen" srcset="" ></a>
-			</section>
+			<div class="messages">
+				<h2 class="msg-header">Apa kata peserta?</h2>
+				<div class="msg-item" id="msg-item">
+				</div>
+				<a href="#kdp">
+					<button class="btn">Isi bagian kesan dan pesan untuk menampilkan pesanmu disini</button>
+				</a>
+			</div>
+		</aside>
+		<!-- another aside untuk panitia -->
+		<aside2>
+			</div>
 			<div class="profil-panitia">
 				<h2>Susunan Panitia</h2>
 				<div class="profil-panitia-flex">
-					<img class="foto-panitia" src="assets/images/panitia/aceu.png" alt="">
+					<img class="foto-panitia" src="assets/images/panitia/Om.png" alt="">
 					<img class="foto-panitia" src="assets/images/panitia/rizki.png" alt="">
 					<img class="foto-panitia" src="assets/images/panitia/alung.png" alt="">
 				</div>
 				<div class="profil-panitia-flex">
-					<img class="foto-panitia" src="assets/images/panitia/aji.png" alt="">
-					<img class="foto-panitia" src="assets/images/panitia/Om.png" alt="">
+					<img class="foto-panitia" src="assets/images/panitia/aji.png" alt=""> 
+					<img class="foto-panitia" src="assets/images/panitia/dayen.png" alt="">
 					<img class="foto-panitia" src="assets/images/panitia/dina.png" alt="">
 				</div>
 				<div class="profil-panitia-flex">
 					<img class="foto-panitia" src="assets/images/panitia/imen.png" alt="">
-					<img class="foto-panitia" src="assets/images/panitia/syswa.png" alt="">
+					<img class="foto-panitia" src="assets/images/panitia/aceu.png" alt="">
 					<img class="foto-panitia" src="assets/images/panitia/iyong.png" alt="">
 				</div>
 			</div>
-		</aside>
+		</aside2>
+		<!-- another aside -->
 	</main>
 	<footer>
 		<div class="footer">
