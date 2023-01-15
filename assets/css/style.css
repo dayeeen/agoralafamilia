@@ -24,7 +24,8 @@ aside {
 	padding: 20px;
 	width: 30%;
 	background-color: #192841;
-	background-image: url("../images/aside.png");
+	background-image: url("../images/default.png");
+	background-repeat: repeat-x;
 	border: 2px solid #000000;
 	max-height: 1090px;
 }
@@ -36,7 +37,8 @@ aside2 {
 	width: 30%;
 	flex-direction: column;
 	background-color: #192841;
-	background-image: url("../images/aside.png");
+	background-image: url("../images/default.png");
+	background-repeat: repeat-x;
 	border: 2px solid #000000;
 }
 /* button panitia center*/
