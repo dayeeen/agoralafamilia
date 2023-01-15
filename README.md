@@ -6,5 +6,7 @@ dibanding projek teman-teman yang lebih up to date. Oleh karenanya, saya minta m
 dan teman-teman sekalian di debut perdana saya ini. 
 Terimakasih... :D
 
+NOTE : Di bagian aside "Apa kata peserta" harusnya menggunakan PHP supaya bisa menyimpan data dari setiap user, tapi berhubung saya belum belajar database jadi saya simulasikan saja lewat JS.
+
 Repo : https://github.com/dayeeen/agoralafamilia
 Link website : https://dayeeen.github.io/agoralafamilia/
