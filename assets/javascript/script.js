@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	const detik = document.getElementById("detik");
 	
 	const sekarang = new Date().getFullYear();
-	const nextReuni = new Date('July 17, 2023 12:00:00');
+	const nextReuni = new Date('July 17, 2024 12:00:00');
 	// Fungsi menampilkan countdown
 	function hitung() {
 		const sekarang = new Date();
