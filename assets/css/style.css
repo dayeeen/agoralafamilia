@@ -75,8 +75,8 @@ aside2 {
 	border-radius: 10px;
 	padding: 10px;
 	background-color: #fff;
-	background-image: url("../images/default.png");
 }
+
 .sambutan {
 	overflow: auto;
 	text-align: justify;
@@ -87,7 +87,6 @@ aside2 {
 	border-radius: 10px;
 	padding: 10px;
 	background-color: #fff;
-	background-image: url("../images/default.png");
 }
 .pic-quotes {
 	padding: 5px;
@@ -113,7 +112,6 @@ aside2 {
 	box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.8);
 	border: 1px solid #000000;
 	border-radius: 10px;
-	background-image: url("../images/cd.png");
 	background-size: cover;
 	background-color: #fff;
 }
@@ -217,7 +215,6 @@ main {
 	border-radius: 10px;
 	padding: 10px;
 	margin-bottom: 20px;
-	background-image: url(../images/default.png);
 	
 	background-color: #fff;
 	
@@ -293,7 +290,6 @@ main {
 	border: 1px solid #000000;
 	border-radius: 10px;
 	background-color: #ffffff;
-	background-image: url(../images/default.png);
 }
 .form-group {
 	padding: 10px;
