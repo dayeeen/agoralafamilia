@@ -1,6 +1,5 @@
 .log/
 node_modules/
 docs/
-css/
 export.scss
 export/
