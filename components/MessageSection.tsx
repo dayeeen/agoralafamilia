@@ -35,7 +35,7 @@ export default function MessageSection() {
   return (
     <section
       id="pesan"
-      className="bg-neutral-50"
+      className="bg-neutral-50 mt-[50px] mb-[50px]"
     >
       <h2 className="mb-4 text-center font-serif text-4xl tracking-widest text-yellow-600">
         PESAN & KESAN
