@@ -49,11 +49,11 @@ export default function HeroCarousel() {
 
             {/* Text */}
             <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
-                <span className="mb-2 text-m tracking-widest text-yellow-300">
-                    REUNI AKBAR
+                <span className="mb-2 text-lg tracking-widest text-yellow-300">
+                    REUNI ALUMNI
                 </span>
 
-                <h1 className="font-serif text-6xl md:text-6xl tracking-widest text-yellow-400 drop-shadow-lg">
+                <h1 className="font-cormorant font-bold md:text-7xl tracking-widest text-yellow-400 drop-shadow-lg">
                     AGORA LA FAMILIA
                 </h1>
             </div>
