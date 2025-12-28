@@ -1,12 +1,36 @@
-Assalamu'alaikum semuanya, sebelumnya perkenalkan nama saya Dian Saputra, salah satu mahasiswa di perguruan tinggi di Bandung. 
-Projek yang saya buat hanyalah projek website sederhana yang dibuat menggunakan HTML, CSS dan Javascript yang saya dapat dari kursus dicoding 
-(karena di kampus saya memang belum sampai matkul pemrograman web). Adapun tema dari projek ini adalah kegiatan reuni SMP. 
-Berhubung projeknya tidak diperkenankan untuk menggunakan library alias harus serba manual, mungkin projek ini akan terlihat kurang menarik 
-dibanding projek teman-teman yang lebih up to date. Oleh karenanya, saya minta masukannya saja dari pak shandika galih 
-dan teman-teman sekalian di debut perdana saya ini. 
-Terimakasih... :D
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-NOTE : Di bagian aside "Apa kata peserta" harusnya menggunakan PHP supaya bisa menyimpan data dari setiap user, tapi berhubung saya belum belajar database jadi saya simulasikan saja lewat JS.
+## Getting Started
 
-Repo : https://github.com/dayeeen/agoralafamilia
-Link website : https://dayeeen.github.io/agoralafamilia/
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
