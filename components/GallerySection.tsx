@@ -1,26 +1,41 @@
-// components/GallerySection.tsx
+import Image from "next/image";
+
+const images = [
+  "/galeries/1.jpg",
+  "/galeries/2.jpg",
+  "/galeries/3.jpg",
+  "/galeries/4.jpg",
+  "/galeries/5.jpg",
+  "/galeries/6.jpg",
+];
+
+// Gallery Masonry
 export default function GallerySection() {
   return (
-    <section id="gallery" className="py-20 px-6">
-      <h2 className="text-3xl font-semibold text-center mb-10">
-        Dokumentasi Reuni
+    <section
+      id="galeri"
+      className="bg-white px-[50px] py-[50px]"
+    >
+      <h2 className="mb-12 text-center font-serif text-4xl tracking-widest text-yellow-600">
+        GALERI KENANGAN
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-        {[1, 2, 3, 4, 5, 6].map((i) => (
+      <div className="columns-2 md:columns-3 gap-6 space-y-6">
+        {images.map((src, index) => (
           <div
-            key={i}
-            className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200"
+            key={index}
+            className="overflow-hidden rounded-2xl"
           >
-            <img
-              src={`/images/doc/${i}.JPG`}
-              alt={`Dokumentasi ${i}`}
-              className="w-full h-full object-cover"
+            <Image
+              src={src}
+              alt={`Galeri reuni ${index + 1}`}
+              width={600}
+              height={800}
+              className="w-full rounded-2xl object-cover transition-transform duration-300 hover:scale-105"
             />
           </div>
         ))}
       </div>
-
     </section>
   );
 }
