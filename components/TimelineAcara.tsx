@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
