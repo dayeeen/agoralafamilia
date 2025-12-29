@@ -31,52 +31,76 @@ const testimonials = [
   },
 ];
 
-export default function MessageSection() {
+function TestiCard({ item }: { item: (typeof testimonials)[number] }) {
   return (
-    <section
-      id="pesan"
-      className="bg-neutral-50 mt-[50px] mb-[50px]"
-    >
-      <h2 className="mb-4 text-center font-serif text-4xl tracking-widest text-yellow-600">
-        PESAN & KESAN
-      </h2>
-
-      <p className="mb-12 text-center text-lg text-neutral-600">
-        Cerita dan kesan dari alumni serta guru tercinta
-      </p>
-
-      <div className="flex gap-6 overflow-x-auto pb-4 scroll-smooth no-scrollbar">
-        {testimonials.map((item, index) => (
-          <div
-            key={index}
-            className="rounded-2xl bg-neutral-100 p-6 shadow-sm"
-          >
-            <div className="flex items-center gap-4 pb-2">
-              <div className="relative h-12 w-12 overflow-hidden rounded-full">
-                <Image
-                  src={item.avatar}
-                  alt={item.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="pb-2">
-                <p className="text-m font-semibold text-neutral-800">
-                  {item.name}
-                </p>
-                <p className="text-s text-neutral-500 w-50">
-                  {item.role}
-                </p>
-              </div>
-            </div>
-            <p className="text-lg text-neutral-700 leading-relaxed">
-              “{item.message}”
-            </p>
-
-          </div>
-        ))}
+    <div className="w-[320px] flex-shrink-0 rounded-2xl  p-5 shadow-sm">
+      <div className="flex items-center gap-3 pb-3">
+        <div className="relative h-10 w-10 overflow-hidden rounded-full">
+          <Image src={item.avatar} alt={item.name} fill className="object-cover" />
+        </div>
+        <div>
+          <p className="text-sm font-semibold text-neutral-800">{item.name}</p>
+          <p className="text-xs text-neutral-500">{item.role}</p>
+        </div>
       </div>
-    </section>
+
+      <p className="text-sm leading-relaxed text-neutral-700">“{item.message}”</p>
+    </div>
+  );
+}
+
+export default function MessageSection() {
+  // split jadi 2 baris
+  const topRow = testimonials.filter((_, i) => i % 2 === 0);
+  const bottomRow = testimonials.filter((_, i) => i % 2 !== 0);
+
+  // perbesar basis konten biar lebar selalu cukup (hindari space kosong)
+  const baseRepeat = 3; // ulangi konten per baris 3x lalu gandakan untuk loop mulus
+  const topBase = Array.from({ length: baseRepeat }, () => topRow).flat();
+  const bottomBase = Array.from({ length: baseRepeat }, () => bottomRow).flat();
+  // duplikasi basis untuk loop seamless (start == end)
+  const topLoop = [...topBase, ...topBase];
+  const bottomLoop = [...bottomBase, ...bottomBase];
+
+  return (
+    <section id="pesan" className="py-[50px]">
+  <h2 className="mb-4 text-center font-serif text-4xl tracking-widest text-yellow-600">
+    PESAN & KESAN
+  </h2>
+
+  <p className="mb-12 text-center text-lg text-neutral-600">
+    Cerita dan kesan dari alumni serta guru tercinta
+  </p>
+
+  {/* ✅ Fade pakai MASK, bukan overlay */}
+  <div
+    className="
+      marquee-wrap relative overflow-hidden
+      [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]
+      [-webkit-mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]
+    "
+  >
+    <div className="space-y-6">
+      {/* ROW ATAS */}
+      <div className="marquee-row overflow-hidden">
+        <div className="marquee marquee-left gap-6 py-1">
+          {topLoop.map((item, idx) => (
+            <TestiCard key={`top-${idx}`} item={item} />
+          ))}
+        </div>
+      </div>
+
+      {/* ROW BAWAH */}
+      <div className="marquee-row overflow-hidden">
+        <div className="marquee marquee-right gap-6 py-1">
+          {bottomLoop.map((item, idx) => (
+            <TestiCard key={`bot-${idx}`} item={item} />
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   );
 }

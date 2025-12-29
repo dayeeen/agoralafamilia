@@ -6,6 +6,8 @@ import Image from "next/image";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
+import Icon from "@mui/material/Icon";
+import { IconCalendar, IconHeart } from "@tabler/icons-react";
 
 const images = [
     "/images/hero.jpg",
@@ -59,18 +61,9 @@ export default function HeroCarousel() {
             </div>
 
             {/* Glass School Badge */}
-            <div className="absolute bottom-6 right-6 z-30">
+            <div className="absolute top-6 left-6 z-30">
                 <div
-                    className="
-      flex items-center gap-3
-      rounded-2xl
-      bg-white/15
-      backdrop-blur-md
-      border border-white/25
-      px-5 py-3
-      shadow-lg
-    "
-                >
+                    className="flex items-center gap-3 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 px-5 py-3 shadow-lg">
                     <Image
                         src="/images/logo.png"
                         alt="SMPN 2 Panumbangan"
@@ -81,6 +74,18 @@ export default function HeroCarousel() {
                         SMPN 2 Panumbangan
                     </span>
                 </div>
+            </div>
+
+            {/* Glass School Badge */}
+            <div className="absolute bottom-6 right-6 z-30">            
+                <div
+                    className="flex items-center gap-3 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 px-5 py-3 shadow-lg">
+                    <IconCalendar className="text-white" />
+                    <span className="text-sm font-semibold text-white">
+                        Sabtu, 12 Juli 2025
+                    </span>
+                </div>
+                
             </div>
 
         </section>

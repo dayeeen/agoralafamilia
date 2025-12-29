@@ -14,7 +14,7 @@ export default function GallerySection() {
   return (
     <section
       id="galeri"
-      className="bg-white px-[50px] py-[50px] mt-[50px]"
+      className="bg-white mt-[50px] mb-[50px]"
     >
       <h2 className="mb-12 text-center font-serif text-4xl tracking-widest text-yellow-600">
         GALERI KENANGAN

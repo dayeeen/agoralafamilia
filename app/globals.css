@@ -131,3 +131,34 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* hanya untuk ngasih lebar konten panjang */
+.marquee {
+  display: flex;
+  width: max-content;
+}
+
+/* animasinya */
+.marquee-left {
+  animation: marquee-left 40s linear infinite;
+}
+
+.marquee-right {
+  animation: marquee-right 40s linear infinite;
+}
+
+/* ✅ pause cuma baris yang di-hover */
+.marquee-row:hover .marquee-left,
+.marquee-row:hover .marquee-right {
+  animation-play-state: paused;
+}
