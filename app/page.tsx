@@ -8,7 +8,7 @@ import { FloatingNavbar } from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-[50px] pt-[30px] bg-white">
+    <main className="min-h-screen px-4 md:px-[50px] pt-4 md:pt-[30px] bg-white">
       <FloatingNavbar />
       <HeroSection />
       <AcaraSection />

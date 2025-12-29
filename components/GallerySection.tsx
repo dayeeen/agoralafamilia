@@ -14,13 +14,13 @@ export default function GallerySection() {
   return (
     <section
       id="galeri"
-      className="bg-white mt-[50px] mb-[50px]"
+      className="bg-white px-4 md:px-0 mt-8 md:mt-[50px] mb-8 md:mb-[50px]"
     >
-      <h2 className="mb-12 text-center font-serif text-4xl tracking-widest text-yellow-600">
+      <h2 className="mb-6 md:mb-12 text-center font-serif text-2xl md:text-4xl tracking-widest text-yellow-600">
         GALERI KENANGAN
       </h2>
 
-      <div className="columns-2 md:columns-3 gap-6 space-y-6">
+      <div className="columns-2 md:columns-3 gap-3 md:gap-6 space-y-3 md:space-y-6">
         {images.map((src, index) => (
           <div
             key={index}

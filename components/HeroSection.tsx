@@ -51,37 +51,38 @@ export default function HeroCarousel() {
 
             {/* Text */}
             <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
-                <span className="mb-2 text-lg tracking-widest text-yellow-300">
+                <span className="mb-2 text-base md:text-lg tracking-widest text-yellow-300">
                     REUNI ALUMNI
                 </span>
 
-                <h1 className="font-cormorant font-bold md:text-7xl tracking-widest text-yellow-400 drop-shadow-lg">
+                <h1 className="font-cormorant font-bold text-4xl md:text-7xl tracking-widest text-yellow-400 drop-shadow-lg">
                     AGORA LA FAMILIA
                 </h1>
             </div>
 
             {/* Glass School Badge */}
-            <div className="absolute top-6 left-6 z-30">
+            <div className="absolute top-3 left-3 md:top-6 md:left-6 z-30">
                 <div
-                    className="flex items-center gap-3 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 px-5 py-3 shadow-lg">
+                    className="flex items-center gap-2 md:gap-3 rounded-xl md:rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 px-3 md:px-5 py-2 md:py-3 shadow-lg">
                     <Image
                         src="/images/logo.png"
                         alt="SMPN 2 Panumbangan"
-                        width={32}
-                        height={32}
+                        width={28}
+                        height={28}
+                        className="w-7 h-7 md:w-8 md:h-8"
                     />
-                    <span className="text-sm font-semibold text-white">
+                    <span className="text-xs md:text-sm font-semibold text-white">
                         SMPN 2 Panumbangan
                     </span>
                 </div>
             </div>
 
             {/* Glass School Badge */}
-            <div className="absolute bottom-6 right-6 z-30">            
+            <div className="absolute bottom-3 right-3 md:bottom-6 md:right-6 z-30">            
                 <div
-                    className="flex items-center gap-3 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 px-5 py-3 shadow-lg">
-                    <IconCalendar className="text-white" />
-                    <span className="text-sm font-semibold text-white">
+                    className="flex items-center gap-2 md:gap-3 rounded-xl md:rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 px-3 md:px-5 py-2 md:py-3 shadow-lg">
+                    <IconCalendar className="text-white w-5 h-5 md:w-6 md:h-6" />
+                    <span className="text-xs md:text-sm font-semibold text-white">
                         Sabtu, 12 Juli 2025
                     </span>
                 </div>
