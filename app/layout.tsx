@@ -11,6 +11,9 @@ const cormorant = Cormorant_Garamond({
 export const metadata = {
   title: "Agora La Familia",
   description: "Website reuni SMP",
+  icons: {
+    icon: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({
