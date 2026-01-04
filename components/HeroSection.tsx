@@ -52,7 +52,7 @@ export default function HeroCarousel() {
             {/* Text */}
             <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
                 <span className="mb-2 text-base md:text-lg tracking-widest text-yellow-300">
-                    REUNI ALUMNI
+                    REUNI ALUMNI SMPN 2 Panumbangan
                 </span>
 
                 <h1 className="font-cormorant font-bold text-4xl md:text-7xl tracking-widest text-yellow-400 drop-shadow-lg">
