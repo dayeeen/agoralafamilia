@@ -20,7 +20,7 @@ export default function HeroCarousel() {
     return (
         <section
             id="beranda"
-            className="relative h-[90vh] w-full overflow-hidden rounded-3xl"
+            className="relative h-[90vh] w-full overflow-hidden rounded-3xl mt-8"
         >
             {/* Carousel */}
             <Swiper

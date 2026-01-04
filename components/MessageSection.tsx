@@ -63,7 +63,7 @@ export default function MessageSection() {
   const bottomLoop = [...bottomBase, ...bottomBase];
 
   return (
-    <section id="pesan" className="px-4 md:px-0 py-8 md:py-[50px]">
+    <section id="pesan" className="px-4 md:px-0 py-8 mt-8 md:py-[50px]">
   <h2 className="mb-4 text-center font-serif text-2xl md:text-4xl tracking-widest text-yellow-600">
     PESAN & KESAN
   </h2>
